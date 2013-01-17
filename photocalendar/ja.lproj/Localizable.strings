@@ -1,0 +1,106 @@
+/* 
+ Localizable.strings
+ photocalendar
+ 
+ Created by Yongnam Park on 11. 10. 22..
+ Copyright (c) 2011 CultStory Inc. All rights reserved.
+ */
+"MSG_WORRY_ABOUT_UPGRADE" = "すでにご購入いただいた場合は、再請求処理ではない。";
+"MSG_BEFORE_UPGRADE" = "アップグレードをすると、写真のアルバムにある動画も適用され、広告なしでご利用いただけます。また、パスワードロック機能も提供されています。";
+"MSG_AFTER_UPGRADE" = "アップグレードをして下さってありがとうございます。 'アルバム表示'メニューで、リストを下に引いて更新すると、画像エプエている動画も追加することができます。";
+
+"UPGRADE" = "UPGRADE!";
+
+"COMPANY_INFO" = "CultStory 開発会社情報";
+"COMPANY_APPS" = "CultStory の他のアプリ";
+"TRAVELOG" = "Upcoming 'Travelog'";
+
+
+"PASSCODE" = "パスワードロック";
+"SET_PASSCODE" = "パスワードの設定";
+"ENTER_PASSCODE" = "暗証番号の入力";
+"PASSCODE_NOT_MATCH" = "パスワードが正しくありません。もう一度やり直してください。";
+
+"ALBUMS" = "Albums";
+"MONTH" = "Month";
+"CALENDAR" = "Calendar";
+
+/// date formats
+
+"FORMAT_CAPTION" = "yyyy.MM.dd cccc a hh:mm:ss";
+"FORMAT_CALENDAR_ITEM" = "a hh:mm";
+"FORMAT_CALENDAR_TITLE" = "yyyy MMMM";
+
+
+
+// pull down 
+
+"RELESASE_LABEL" = "Refresh...";
+"PULL_DOWN_LABEL" = "Pull down to refresh";
+"LOADING" = "Loading...";
+
+
+// refresh
+
+"REFRESH_MSG" = "写真を新たにロードしますか？";
+"REFRESH_CONTINUE" = "はい";
+
+
+// IN APP PURCHASE
+
+"FAILED_MSG" = "購入が行われませんでした。もう一度しますか？";
+"TRY_AGAIN" = "やり直し";
+
+// COMMON
+
+"MAP" = "Map";
+
+"APP_NAME" = "PhotoCal";
+
+"CANCEL" = "キャンセル";
+
+"NO" = "いいえ";
+
+
+"CLOSE" = "Close";
+
+"BACK" = "Back";
+
+// no image & location service 
+
+"NO_PHOTO_TITLE" = "There are no photos";
+
+"NO_PHOTO_DESC" = "Pull down screen to update,\n after added any photos to you iPhone";
+
+"LOCATION_SERVICE_TITLE" = "Needs to use Location Services";
+
+"LOCATION_SERVICE_DESC" = "PhotoCal doesn't collect any info from you.\nBut be required to using the Location Service\nas your consent is necessary for us\nin order to classify your photos.";
+
+
+"DELETED_PHOTO_TITLE" = "Deleted Photo";
+
+"DELETED_PHOTO_DESC" = "This photo was deleted in you iPhone.\nPlease tap the button above to sync latest data.";
+
+// CHOOSING GROUPS
+
+"CHOOSE_GROUPS" = "Choose Groups";
+
+"DONE" = "Done";
+
+"%d Group%@, %d Item%@ Selected" = "%d Group%@, %d Item%@ Selected";
+
+"s" = "s";
+
+
+// StatusBar
+
+"Syncing Photos" = "Syncing Photos";
+
+"Complete Syncing" = "Complete Syncing";
+
+// 1.5
+"Facebook" = "Facebook";
+
+"Select Albums to Sync" = "Select Albums to Sync";
+
+"Order by date ascending" = "Order by date ascending";

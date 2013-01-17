@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="10K549" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="DateGroup" representedClassName="DateGroup" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date"/>
+        <attribute name="date_str" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PhotoModel" inverseName="date" inverseEntity="PhotoModel"/>
+    </entity>
+    <entity name="MonthGroup" representedClassName="MonthGroup" syncable="YES">
+        <attribute name="cnt" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="month" optional="YES" attributeType="Date"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <attribute name="year" optional="YES" attributeType="Date"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PhotoModel" inverseName="month" inverseEntity="PhotoModel"/>
+    </entity>
+    <entity name="PhotoGroup" representedClassName="PhotoGroup" syncable="YES">
+        <attribute name="group_id" optional="YES" attributeType="String"/>
+        <attribute name="group_name" optional="YES" attributeType="String"/>
+        <attribute name="group_type" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="photo_cnt" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="poster" optional="YES" attributeType="Binary"/>
+        <attribute name="thumb_url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PhotoModel" inverseName="group" inverseEntity="PhotoModel"/>
+    </entity>
+    <entity name="PhotoModel" representedClassName="PhotoModel" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="Double" defaultValueString="0.0"/>
+        <attribute name="date_create" optional="YES" attributeType="Date"/>
+        <attribute name="date_exif" optional="YES" attributeType="Date"/>
+        <attribute name="duration" optional="YES" attributeType="Double" defaultValueString="0.0"/>
+        <attribute name="group_date" optional="YES" attributeType="Date"/>
+        <attribute name="group_date_day" optional="YES" attributeType="Date"/>
+        <attribute name="group_date_month" optional="YES" attributeType="Date"/>
+        <attribute name="group_date_year" optional="YES" attributeType="Date"/>
+        <attribute name="group_loc_city" optional="YES" attributeType="String"/>
+        <attribute name="group_loc_country" optional="YES" attributeType="String"/>
+        <attribute name="group_loc_state" optional="YES" attributeType="String"/>
+        <attribute name="group_name" optional="YES" attributeType="String"/>
+        <attribute name="group_type" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="location_lat" optional="YES" attributeType="Double" defaultValueString="0"/>
+        <attribute name="location_long" optional="YES" attributeType="Double" defaultValueString="0"/>
+        <attribute name="string_day" optional="YES" attributeType="String"/>
+        <attribute name="thumb_data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="thumb_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String" indexed="YES"/>
+        <attribute name="UTI" optional="YES" attributeType="String"/>
+        <relationship name="date" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DateGroup" inverseName="photos" inverseEntity="DateGroup"/>
+        <relationship name="group" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PhotoGroup" inverseName="photos" inverseEntity="PhotoGroup"/>
+        <relationship name="month" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="MonthGroup" inverseName="photos" inverseEntity="MonthGroup"/>
+    </entity>
+    <elements>
+        <element name="DateGroup" positionX="160" positionY="192" width="128" height="113"/>
+        <element name="MonthGroup" positionX="160" positionY="376" width="128" height="128"/>
+        <element name="PhotoGroup" positionX="63" positionY="-36" width="128" height="158"/>
+        <element name="PhotoModel" positionX="-243" positionY="118" width="128" height="413"/>
+    </elements>
+</model>

@@ -1,0 +1,113 @@
+/* 
+ Localizable.strings
+ photocalendar
+ 
+ Created by Yongnam Park on 11. 10. 22..
+ Copyright (c) 2011 CultStory Inc. All rights reserved.
+ */
+"MSG_WORRY_ABOUT_UPGRADE" = "이미 구매를 하신 적이 있으시면 다시 과금되지 않습니다:)";
+"MSG_BEFORE_UPGRADE" = "업그레이드를 하시면 사진앨범에 있는 동영상도 적용되며, 광고없이 이용하실 수 있습니다. 또한, 비밀번호 잠금기능 및 앨범선택 동기화 기능도 제공됩니다.";
+"MSG_AFTER_UPGRADE" = "업그레이드를 해주셔서 감사합니다. '앨범보기' 메뉴에서 리스트를 아래로 당겨 업데이트하시면 사진 앱에 있는 동영상들도 추가하실 수 있습니다. 앞으로도 유용한 애플리케이션을 개발하도록 노력하겠습니다.";
+
+"UPGRADE" = "UPGRADE!";
+
+"COMPANY_INFO" = "CultStory 개발사 정보";
+"COMPANY_APPS" = "CultStory 의 다른 앱";
+"TRAVELOG" = "Upcoming 'Travelog'";
+
+
+"PASSCODE" = "비밀번호 잠금";
+"SET_PASSCODE" = "비밀번호 설정";
+"ENTER_PASSCODE" = "비밀번호 입력";
+"PASSCODE_NOT_MATCH" = "비밀번호가 맞지 않습니다. 다시 시도해 주세요.";
+
+"ALBUMS" = "앨범보기";
+"MONTH" = "월별보기";
+"CALENDAR" = "캘린더";
+
+/// date formats
+
+"FORMAT_CAPTION" = "yyyy년 M월 d일 cccc a hh:mm:ss";
+"FORMAT_CALENDAR_ITEM" = "a hh:mm";
+"FORMAT_CALENDAR_TITLE" = "yyyy년 M월";
+
+
+
+// pull down 
+
+"RELESASE_LABEL" = "업데이트를 합니다...";
+"PULL_DOWN_LABEL" = "업데이트 하시려면 아래로 당기세요...";
+"LOADING" = "로딩중...";
+
+
+// refresh
+
+"REFRESH_MSG" = "사진을 업데이트 하시겠습니까?";
+"REFRESH_CONTINUE" = "업데이트";
+
+
+// IN APP PURCHASE
+
+"FAILED_MSG" = "구매가 이루어지지 않았습니다. 다시 하시겠습니까?";
+"TRY_AGAIN" = "다시하기";
+
+// COMMON
+
+"MAP" = "지도";
+
+"APP_NAME" = "포토캘린더";
+
+"CANCEL" = "취소";
+
+"NO" = "아니오";
+
+"CLOSE" = "닫기";
+
+"BACK" = "뒤로";
+
+"OK" = "확인";
+
+// no image & location service 
+
+"NO_PHOTO_TITLE" = "아이폰에 사진이 없으시네요!";
+
+"NO_PHOTO_DESC" = "사진 앨범에 사진이 추가되면\n이 화면을 아래로 당겨 업데이트해주세요.";
+
+"LOCATION_SERVICE_TITLE" = "위치정보 서비스 사용이 필요합니다";
+
+"LOCATION_SERVICE_DESC" = "포토캘린더는 사용자의 위치 정보를 수집하지 않습니다.\n다만, 아이폰의 사진을 분류하기 위해서는\n위치 정보 사용동의가 필요합니다.";
+
+
+"DELETED_PHOTO_TITLE" = "삭제된 사진";
+
+"DELETED_PHOTO_DESC" = "사용자에 의해 폰에서 삭제 된 사진 입니다.\n위의 버튼을 누르시면 아이폰 사진과 동기화 됩니다.";
+
+
+// CHOOSING GROUPS
+
+"CHOOSE_GROUPS" = "앨범 선택";
+
+"DONE" = "완료";
+
+"%d Group%@, %d Item%@ Selected" = "%d 앨범%@, %d 아이템%@ 선택됨";
+
+"s" = "";
+
+
+// StatusBar
+
+"Syncing Photos" = "사진을 동기화 하는 중 입니다";
+
+"Complete Syncing" = "동기화가 완료되었습니다";
+
+"Facebook Login" = "페이스북 로그인";
+
+// 1.5
+
+"Select Albums to Sync" = "가져올 앨범 선택";
+
+"Order by date ascending" = "오래된 사진 순으로 보기";
+
+"Syncing Now" = "동기화 중입니다";
+
+"Try after finish sync photos" = "동기화가 완료된 후 다시 시도해주세요";

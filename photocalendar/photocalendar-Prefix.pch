@@ -1,0 +1,92 @@
+//
+// Prefix header for all source files of the 'photocalendar' target in the 'photocalendar' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iPhone SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#include <dispatch/dispatch.h>
+#endif
+
+#define IS_IPHONE_5 [UIScreen mainScreen].bounds.size.height==568
+
+
+#define RGB(r, g, b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+#define RGBA(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+#define kHasDataLoaded @"dataLoaded"
+#define kHasLibraryChanged @"changed"
+
+
+
+#define SYSTEM_VERSION_EQUAL_TO(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+
+
+#define LIBRARY_FOLDER [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+#define DOCUMENT_FOLDER [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+#define PHOTO_CACHE_FOLDER [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"thumbs"]
+#define PHOTO_CACHE_FORLDER_FOR_UPPER_V15 [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"thumbnails"]
+#define PHOTOCAL_DB_NAME_FOR_UPPER_V15 @"photocalendar_v15.sqlite"
+
+#define USER_DEFAULT [NSUserDefaults standardUserDefaults]
+#define HAS_UPGRADED [[NSUserDefaults standardUserDefaults] boolForKey:@"hasUpgraded"]
+#define UPGRADED(u) [[NSUserDefaults standardUserDefaults] setBool:u forKey:@"hasUpgraded"]
+
+#define HAS_DATA_LOADED [[NSUserDefaults standardUserDefaults] boolForKey:@"dataLoaded"]
+#define DATA_LOADED(loaded) [[NSUserDefaults standardUserDefaults] setBool:b forKey:@"dataLoaded"]
+
+#define GET_PASSCODE [[NSUserDefaults standardUserDefaults] objectForKey:@"passcode"]
+#define SET_PASSCODE(p) [[NSUserDefaults standardUserDefaults] setObject:p forKey:@"passcode"]
+
+
+#define FIRST(f) [[NSUserDefaults standardUserDefaults] setBool:f forKey:@"firstLaunch"]
+#define IS_FIRST [[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"]
+
+
+#define SYNC_USER_DEFAULT [[NSUserDefaults standardUserDefaults] synchronize]
+
+#define FULL_FRAME CGRectMake(0, 0, 320, IS_IPHONE_5?504:416)
+#define ADS_FRAME CGRectMake(0, 0, 320, IS_IPHONE_5?454:366)
+
+
+#define MY_BANNER_UNIT_ID @"a14e9eb1a802d8e"  //a14e9eb1a802d8e 
+#define CAULY_ID @"iKQ5TwnLFh"
+
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+
+#define AD_POSITION_SHOW CGRectMake(0,(IS_IPHONE_5?548:460)-50,320,50)
+#define AD_POSITION_HIDE CGRectMake(0,(IS_IPHONE_5?548:460),320,50)
+
+#define APP_VERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
+#define SET_APP_VERSION(v) [[NSUserDefaults standardUserDefaults] setObject:v forKey:@"AppVersion"]
+#define GET_APP_VERSION [[NSUserDefaults standardUserDefaults] objectForKey:@"AppVersion"]
+
+#define APP_VERSION_LESS_THAN(v) ([[[NSUserDefaults standardUserDefaults] objectForKey:@"AppVersion"] compare:v options:NSNumericSearch] == NSOrderedAscending)
+
+#define HIDDEN_GROUP_PLIST [[NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"hiddenGroup.plist"]
+
+#define GET_DB_FILE_NAME [[NSUserDefaults standardUserDefaults] objectForKey:@"DBFileName"]
+#define SET_DB_FILE_NAME(n) [[NSUserDefaults standardUserDefaults] setObject:n forKey:@"DBFileName"]
+
+
+
+// over 1.5
+#define ORDER_BY_ASC [[NSUserDefaults standardUserDefaults] boolForKey:@"orderByAsc"]
+#define SET_ORDER_BY_ASC(a) [[NSUserDefaults standardUserDefaults] setBool:a forKey:@"orderByAsc"]

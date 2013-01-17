@@ -1,0 +1,103 @@
+/* 
+  Localizable.strings
+  photocalendar
+
+  Created by Yongnam Park on 11. 10. 22..
+  Copyright (c) 2011 CultStory Inc. All rights reserved.
+*/
+"MSG_WORRY_ABOUT_UPGRADE" = "If you have upgrade ever, there will be no extra charge again!";
+"MSG_BEFORE_UPGRADE" = "Do you like this app? You can load videos \n(in Photos app) without Ad after upgrade! And even can use Passcode Lock.";
+"MSG_AFTER_UPGRADE" = "Thanks for upgrade! You are one of the best supporters for CultStory Inc. You can add movies in Photo app at 'Albums' menu by pull down ths lists. Have a good day:)";
+
+"UPGRADE" = "UPGRADE!";
+
+"COMPANY_INFO" = "Developer Info : CultStory";
+"COMPANY_APPS" = "Other Apps of CultStory";
+"TRAVELOG" = "Upcoming 'Travelog'";
+
+
+"PASSCODE" = "Passcode Lock";
+"SET_PASSCODE" = "Set Passcode";
+"ENTER_PASSCODE" = "Enter passcode";
+"PASSCODE_NOT_MATCH" = "Passcode did not match. Try Again.";
+
+"ALBUMS" = "Альбомы";
+"MONTH" = "месяц";
+"CALENDAR" = "календарь";
+
+/// date formats
+
+"FORMAT_CAPTION" = "hh:mm a, d MMMM, yyyy";
+"FORMAT_CALENDAR_ITEM" = "hh:mm a";
+"FORMAT_CALENDAR_TITLE" = "LLLL yyyy";
+
+
+// pull down 
+
+"RELESASE_LABEL" = "Release to sync photos...";
+"PULL_DOWN_LABEL" = "Pull down to sync photos...";
+"LOADING" = "Loading...";
+
+
+// refresh
+
+"REFRESH_MSG" = "All photos will be synced. It will take some seconds.";
+"REFRESH_CONTINUE" = "OK";
+
+
+// IN APP PURCHASE
+
+"FAILED_MSG" = "Purchasing was failed. Will you try again?";
+"TRY_AGAIN" = "TRY AGAIN";
+
+// COMMON
+
+"MAP" = "Map";
+
+"APP_NAME" = "PhotoCal";
+
+"CANCEL" = "Cancel";
+
+"NO" = "NO";
+
+"CLOSE" = "Close";
+
+"BACK" = "Back";
+
+// no image & location service 
+
+"NO_PHOTO_TITLE" = "There are no photos";
+
+"NO_PHOTO_DESC" = "Pull down screen to update,\n after added any photos to you iPhone";
+
+"LOCATION_SERVICE_TITLE" = "Needs to use Location Services";
+
+"LOCATION_SERVICE_DESC" = "PhotoCal doesn't collect any info from you.\nBut be required to using the Location Service\nas your consent is necessary for us\nin order to classify your photos.";
+
+"DELETED_PHOTO_TITLE" = "Deleted Photo";
+
+"DELETED_PHOTO_DESC" = "This photo was deleted in you iPhone.\nPlease tap the button above to sync latest data.";
+
+// CHOOSING GROUPS
+
+"CHOOSE_GROUPS" = "Choose Groups";
+
+"DONE" = "Done";
+
+"%d Group%@, %d Item%@ Selected" = "%d Group%@, %d Item%@ Selected";
+
+"s" = "s";
+
+
+// StatusBar
+
+"Syncing Photos" = "Syncing Photos";
+
+"Complete Syncing" = "Complete Syncing";
+
+// 1.5
+"Facebook" = "Facebook";
+
+"Select Albums to Sync" = "Select Albums to Sync";
+
+"Order by date ascending" = "Order by date ascending";
